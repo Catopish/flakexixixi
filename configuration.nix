@@ -102,6 +102,7 @@ kitty
 kitty-themes
 fzf
 lazygit
+    spotify
 
 #gnome
 gnome-icon-theme
