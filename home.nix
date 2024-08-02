@@ -119,7 +119,7 @@ add_newline = false;
 "unknown_msg = '[unknown shell](bold yellow)'"
 "format = 'via [☃️ $state( \($name\))](bold blue) '"
   ];
-}
+};
 programs.zsh = {
   enable = true;
   enableCompletion = true;
@@ -134,7 +134,6 @@ homeupdate = "home-manager switch --flake .#al ";
   history = {
     size = 10000;
     path = "${config.xdg.dataHome}/zsh/history";
-};
 };
 oh-my-zsh = {
 enable =true;
