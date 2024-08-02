@@ -108,7 +108,17 @@ programs.kitty = {
       # See all available kitty themes at: https://github.com/kovidgoyal/kitty-themes/blob/46d9dfe230f315a6a0c62f4687f6b3da20fd05e4/themes.json
     };
 
-
+programs.starship.settings ={
+add_newline = false;
+  format = lib.concatStrings [
+"[nix_shell]"
+"disabled = true"
+"impure_msg = '[impure shell](bold red)'"
+"pure_msg = '[pure shell](bold green)'"
+"unknown_msg = '[unknown shell](bold yellow)'"
+"format = 'via [☃️ $state( \($name\))](bold blue) '"
+  ];
+}
 programs.zsh = {
   enable = true;
   enableCompletion = true;
