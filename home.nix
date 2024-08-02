@@ -130,7 +130,7 @@ plugins = ["git"];
    };
    initExtra = ''
    eval "$(starship init zsh)"
-   ''
+   '';
   };
 
 
