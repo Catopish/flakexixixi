@@ -24,6 +24,8 @@
     pkgs.lunarvim
     pkgs.nodejs_22
     pkgs.yarn
+
+    pkgs.starship
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -125,9 +127,14 @@ homeupdate = "home-manager switch --flake .#al ";
 oh-my-zsh = {
 enable =true;
 plugins = ["git"];
-theme ="agnoster";
    };
+   initExtra = ''
+   eval "$(starship init zsh)"
+   ''
   };
+
+
+
 programs.zoxide={
 enable=true;
 enableZshIntegration=true;
