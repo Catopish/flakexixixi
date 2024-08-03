@@ -80,7 +80,6 @@ programs.kitty = {
     };
 
 programs.starship={
-enableTransience=true;
 settings ={
   add_newline = false;
   format = "$shlvl$shell$username$hostname$nix_shell$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
@@ -94,7 +93,7 @@ settings ={
     format = "$indicator";
     fish_indicator = "";
     bash_indicator = "[BASH](bright-white) ";
-    zsh_indicator = "[ZSH](bright-white) ";
+    zsh_indicator = "[ZSH](bright-blue) ";
   };
   username = {
     style_user = "bright-white bold";
