@@ -13,7 +13,7 @@
     pkgs.lunarvim
     pkgs.nodejs_22
     pkgs.yarn
-
+pkgs.vimPlugins.LazyVim
     pkgs.starship
   ];
 
