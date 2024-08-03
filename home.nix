@@ -30,6 +30,14 @@
     # '';
   };
 
+#neovim
+programs.neovim={
+enable=true;
+plugins = with pkgs.vimPlugins;[
+LazyVim
+];
+};
+
 services.polybar={
 
   enable=true;
