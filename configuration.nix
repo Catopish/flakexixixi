@@ -103,6 +103,8 @@ kitty-themes
 fzf
 lazygit
     spotify
+    nix-ld
+    envfs
 
 #gnome
 gnome-icon-theme
