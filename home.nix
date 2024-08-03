@@ -26,7 +26,7 @@ pkgs.vimPlugins.LazyVim
     # ".screenrc".source = dotfiles/screenrc;
 ".config/lvim/config.lua".source = lvim/config.lua;
 ".config/nvim/"={
-source= /lazyvimnix;
+source= ./lazyvimnix/;
 recursive=true;
 };
     # # You can also set the file content immediately.
