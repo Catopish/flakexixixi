@@ -2,7 +2,7 @@
 
 {
   imports=[
-  nixvim.homeManagerModules.nixvim
+  # nixvim.homeManagerModules.nixvim
   ];
   home.username = "al";
   home.homeDirectory = "/home/al";

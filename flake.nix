@@ -29,7 +29,6 @@ modules = [ ./configuration.nix ];
   homeConfigurations ={
 al = home-manager.lib.homeManagerConfiguration{
 inherit pkgs;
-inherit nixvim;
 modules = [ ./home.nix ];
 	 };
 	};
