@@ -59,7 +59,7 @@ programs.neovim.enable =true;
 services.polybar={
 
   enable=true;
-  config=./polybar/config.ini;
+  config=./polybar/polybar.ini;
   # script=/home/al/.dotfiles/polybar/launch.sh;
   script=''
   polybar bar &
