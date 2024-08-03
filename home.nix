@@ -25,6 +25,7 @@ pkgs.vimPlugins.LazyVim
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 ".config/lvim/config.lua".source = lvim/config.lua;
+".config/nvim/".source=./lazyvimnix;
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
