@@ -79,7 +79,9 @@ programs.kitty = {
       # See all available kitty themes at: https://github.com/kovidgoyal/kitty-themes/blob/46d9dfe230f315a6a0c62f4687f6b3da20fd05e4/themes.json
     };
 
-programs.starship.settings ={
+programs.starship={
+enableTransience=true;
+settings ={
   add_newline = false;
   format = "$shlvl$shell$username$hostname$nix_shell$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
   shlvl = {
@@ -98,6 +100,7 @@ programs.starship.settings ={
     style_user = "bright-white bold";
     style_root = "bright-red bold";
   };
+};
 };
 programs.zsh = {
   enable = true;
