@@ -74,7 +74,7 @@ programs.kitty = {
         size = 10;
       };
       shellIntegration.enableZshIntegration = true;
-      theme = "Catppuccin-Macchiato";
+      theme = "Catppuccin-Mocha";
       #Also available: Catppuccin-Frappe Catppuccin-Latte Catppuccin-Macchiato Catppuccin-Mocha
       # See all available kitty themes at: https://github.com/kovidgoyal/kitty-themes/blob/46d9dfe230f315a6a0c62f4687f6b3da20fd05e4/themes.json
     };
@@ -93,7 +93,7 @@ settings ={
     format = "$indicator";
     fish_indicator = "";
     bash_indicator = "[BASH](bright-white) ";
-    zsh_indicator = "[ZSH](bright-blue) ";
+    zsh_indicator = "[ZSH](bright-white) ";
   };
   username = {
     style_user = "bright-white bold";
