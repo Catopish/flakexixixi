@@ -117,7 +117,6 @@ material-design-icons
 unifont
 
 #vimplugins
-vimPlugins.LazyVim
 ];
 
 fonts.packages=with pkgs;[nerdfonts];
