@@ -12,7 +12,7 @@
 
   };
 
-  outputs = { self,nixvim,nixpkgs,home-manager,utils,... }@inputs:
+  outputs = { self,nixpkgs,home-manager,utils,... }@inputs:
 let
   lib = nixpkgs.lib;
 system = "x86_64-linux";
@@ -30,7 +30,6 @@ modules = [ ./configuration.nix ];
 al = home-manager.lib.homeManagerConfiguration{
 inherit pkgs;
 modules = [ ./home.nix ];
-inputs.nixvim.homeManagerModules.nixvim;
 	 };
 	};
   };
