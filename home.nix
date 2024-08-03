@@ -1,5 +1,7 @@
-{ config, pkgs,nixvim, ... }:
-
+{ config, pkgs,lib, ... }:
+let
+ linker = lib.fileContents "${pkgs.binutils}/nix-support/dynamic-linker";
+ in
 {
   imports=[
   # nixvim.homeManagerModules.nixvim
@@ -36,6 +38,16 @@ enable=true;
 plugins = with pkgs.vimPlugins;[
 LazyVim
 ];
+extraWrapperArgs = [
+      "--suffix"
+      "NIX_LD_LIBRARY_PATH"
+      ":"
+      #If you need other libraries for you DAP's etc add them here
+      "${lib.makeLibraryPath [pkgs.stdenv.cc.cc pkgs.zlib]}"
+      "--set"
+      "NIX_LD"
+      "${linker}"
+    ];
 };
 
 services.polybar={
