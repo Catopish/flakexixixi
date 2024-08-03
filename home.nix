@@ -56,46 +56,17 @@
   };
 programs.neovim.enable =true;
 
-#services.polybar={
-#enable=true;
-#config={
-#"bar/top" = {
-#    monitor = "\${env:MONITOR:eDP1}";
-#    width = "100%";
-#    height = "3%";
-#    radius = 0;
-#    modules-center = "date";
-#  };
-#
-#  "module/date" = {
-#    type = "internal/date";
-#    internal = 5;
-#    date = "%d.%m.%y";
-#    time = "%H:%M";
-#    label = "%time%  %date%";
-#  };
-#  script=./polybar/startpolybar.sh;
-# };
-#};
- #home.file.".config/polybar/pipewire.sh" = {
- #   source = pkgs.polybar-pipewire;
- #   executable = true;
- # };
- # services.polybar = mkIf withGUI {
- #   enable = true;
- #   package = pkgs.polybarFull;
- #   config = pkgs.substituteAll {
- #     src = ./polybar-config;
- #     interface = networkInterface;
- #   };
- #   script = ''
- #     for m in $(polybar --list-monitors | ${pkgs.coreutils}/bin/cut -d":" -f1); do
- #       MONITOR=$m polybar nord &
- #     done
- #   '';
- # };
+services.polybar={
 
-#kitty
+  enable=true;
+  config=./polybar/config.ini;
+  # script=/home/al/.dotfiles/polybar/launch.sh;
+  script=''
+  polybar bar &
+  '';
+};
+
+ ##kitty
 programs.kitty = {
       enable = true;
       font = {
