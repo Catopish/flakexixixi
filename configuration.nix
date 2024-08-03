@@ -113,6 +113,8 @@ rose-pine-gtk-theme
 numix-icon-theme-circle
 polybarFull
 gnomeExtensions.just-perfection
+material-design-icons
+unifont
 ];
 
 fonts.packages=with pkgs;[nerdfonts];
