@@ -29,7 +29,6 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
   };
-programs.neovim.enable =true;
 
 services.polybar={
 
