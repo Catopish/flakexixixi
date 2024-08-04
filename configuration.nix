@@ -115,11 +115,13 @@ echo "console-mode keep" >> /boot/loader/loader.conf
     rose-pine-gtk-theme 
     numix-icon-theme-circle
     polybarFull
-    gnomeExtensions.just-perfection
-    gnomeExtensions.open-bar
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.blur-my-shell
-
+# GNOME Extensions
+  ] ++ (with pkgs.gnomeExtensions; [
+    just-perfection
+    open-bar
+    dash-to-dock
+    blur-my-shell
+  ]) ++ [
 material-design-icons
 unifont
 

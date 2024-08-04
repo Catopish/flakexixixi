@@ -1,4 +1,4 @@
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 lvim.plugins= { -- Lua
   {
     "folke/twilight.nvim",
