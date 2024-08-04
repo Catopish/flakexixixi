@@ -114,7 +114,12 @@ nerdfonts
 rose-pine-gtk-theme 
 numix-icon-theme-circle
 polybarFull
-gnomeExtensions.just-perfection
+gnomeExtensions[
+open-bar
+just-perfection
+dash-to-dock
+blur-my-shell
+]
 material-design-icons
 unifont
 
