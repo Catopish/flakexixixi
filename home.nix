@@ -11,12 +11,14 @@ let
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
-  home.packages = [
-    pkgs.lunarvim
-    pkgs.nodejs_22
-    pkgs.yarn
-pkgs.vimPlugins.LazyVim
-    pkgs.starship
+  home.packages = with pkgs;[
+    lunarvim
+    nodejs_22
+    corepack_22
+    yarn
+    vimPlugins.LazyVim
+    starship
+
   ];
 
   home.file = {
