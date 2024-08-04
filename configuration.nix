@@ -106,6 +106,7 @@ echo "console-mode keep" >> /boot/loader/loader.conf
     nix-ld
     envfs
     xclip
+    vscode
 
 #gnome
     gnome-icon-theme
