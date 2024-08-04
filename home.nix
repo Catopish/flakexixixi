@@ -17,6 +17,7 @@ let
     corepack_22
     yarn
     vimPlugins.LazyVim
+    vimPlugins.nvim-lspconfig
     starship
 
   ];
