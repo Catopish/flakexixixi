@@ -94,32 +94,32 @@ echo "console-mode keep" >> /boot/loader/loader.conf
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-git
-neofetch
-zoxide
-yazi
-kitty
-kitty-themes
-fzf
-lazygit
+    git
+    neofetch
+    zoxide
+    yazi
+    kitty
+    kitty-themes
+    fzf
+    lazygit
     spotify
     nix-ld
     envfs
+    xclip
 
 #gnome
-gnome-icon-theme
-gnome.gnome-tweaks
-jetbrains-mono
-nerdfonts
-rose-pine-gtk-theme 
-numix-icon-theme-circle
-polybarFull
-gnomeExtensions[
-open-bar
-just-perfection
-dash-to-dock
-blur-my-shell
-]
+    gnome-icon-theme
+    gnome.gnome-tweaks
+    jetbrains-mono
+    nerdfonts
+    rose-pine-gtk-theme 
+    numix-icon-theme-circle
+    polybarFull
+    gnomeExtensions.just-perfection
+    gnomeExtensions.open-bar
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.blur-my-shell
+
 material-design-icons
 unifont
 
