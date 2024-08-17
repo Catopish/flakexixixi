@@ -41,6 +41,7 @@ programs.neovim={
 enable=true;
 plugins = with pkgs.vimPlugins;[
 LazyVim
+nvim-treesitter
 ];
 extraWrapperArgs = [
       "--suffix"
