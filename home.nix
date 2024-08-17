@@ -27,8 +27,8 @@ let
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 ".config/lvim/config.lua".source = lvim/config.lua;
-# ".config/nvim/".source= lazyvimnix/nvim;
-# ".config/nvim/".recursive=true;
+".config/nvim/".source= lazyvimnix/nvim;
+".config/nvim/".recursive=true;
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
@@ -39,9 +39,6 @@ let
 #neovim
 programs.neovim={
 enable=true;
-plugins = with pkgs.vimPlugins;[
-LazyVim
-];
 extraWrapperArgs = [
       "--suffix"
       "NIX_LD_LIBRARY_PATH"
