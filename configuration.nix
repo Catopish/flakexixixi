@@ -104,6 +104,9 @@ echo "console-mode keep" >> /boot/loader/loader.conf
     lazygit
     spotify
     nix-ld
+    gcc
+    cargo
+    rustup
     envfs
     xclip
     vscode
