@@ -110,7 +110,7 @@ echo "console-mode keep" >> /boot/loader/loader.conf
     envfs
     xclip
     vscode
-
+    luajitPackages.luarocks
 #gnome
     gnome-icon-theme
     gnome.gnome-tweaks
