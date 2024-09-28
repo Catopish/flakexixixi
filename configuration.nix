@@ -20,7 +20,7 @@ echo "console-mode keep" >> /boot/loader/loader.conf
  '';
 };
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.blacklistedKernelModules = [ "tpmrm" ];
+  boot.blacklistedKernelModules = [ "tpm" "tpmrm" "tpm_tis" "tpm_crb"];
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -110,6 +110,7 @@ echo "console-mode keep" >> /boot/loader/loader.conf
     envfs
     xclip
     vscode
+    gparted
 
     ripgrep
     luajitPackages.luarocks
