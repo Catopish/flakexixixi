@@ -78,6 +78,16 @@ programs.kitty = {
       # See all available kitty themes at: https://github.com/kovidgoyal/kitty-themes/blob/46d9dfe230f315a6a0c62f4687f6b3da20fd05e4/themes.json
       extraConfig = ''
       window_padding_width 10
+      map f2 launch --stdin-source=@last_cmd_output --type=clipboard
+      map alt+1 goto_tab 1
+      map alt+2 goto_tab 2
+      map alt+3 goto_tab 3
+      map alt+4 goto_tab 4
+      map alt+5 goto_tab 5
+      map alt+6 goto_tab 6
+      map alt+7 goto_tab 7
+      map alt+8 goto_tab 8
+      map alt+9 goto_tab 9
       '';
     };
 
